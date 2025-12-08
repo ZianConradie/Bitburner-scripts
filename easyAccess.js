@@ -1,6 +1,6 @@
 /** @param {NS} ns */
 export async function main(ns) {
-  const mode = (ns.args[0]||"list")
+  const mode = (ns.args[0]||"help")
   switch (mode) {
     case "list":
       ns.tprint(await getFiles(ns))
@@ -26,7 +26,7 @@ export async function main(ns) {
       ns.tprint("\nMade by ChkChkChkBoom (@chkchkchkboom on Discord)")
       break
     case "help":
-      ns.tprint("\nCommands:\nhelp: displays help\ncredits: shows credits\nlist: display file tree\nshow: display a file\ndownload: downloads a file to Bitburner")
+      ns.tprint("\nCommands:\nhelp: displays help\ncredits: shows credits\nlist: display file tree\nshow: display a file\ndownload: downloads a file to Bitburner\nrepository: displays repository used")")
       break
   }
 }
