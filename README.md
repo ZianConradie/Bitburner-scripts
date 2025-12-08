@@ -7,6 +7,7 @@ I described the project in Short Description, but will add an FAQ section here i
 (These are changes that would be liked to be implemented, but not an issue, technically)
 
   -General Improvements
+  
   -More scripts
 
 # Contributors:
