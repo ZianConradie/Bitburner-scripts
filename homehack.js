@@ -8,5 +8,5 @@ export async function main(ns) {
     const scriptRam = ns.getScriptRam(script);
     const threads = Math.floor(maxRam / scriptRam);
 
-    ns.exec("hack.js", "home", threads-1)
+    ns.exec("hack.js", "home", threads)
 }
