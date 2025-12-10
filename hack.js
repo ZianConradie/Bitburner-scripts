@@ -19,7 +19,7 @@ export async function main(ns) {
         if (s === "home") return false;
         const req = ns.getServerRequiredHackingLevel(s);
         const maxMoney = ns.getServerMaxMoney(s);
-        return req <= myHack / 2 && maxMoney > 0; // must have money
+        return req <= Math.ceiling(myHack / 2) && maxMoney > 0; // must have money
     });
 
     if (validTargets.length === 0) {
