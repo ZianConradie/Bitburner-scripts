@@ -99,9 +99,9 @@ export async function main(ns) {
   }
 }
 
-async function getFiles(ns, repo) {
-  const url = `https://api.github.com/repos/${repo}/git/trees/main?recursive=1`;
-  const res = await fetch(url);
+async function getFiles(ns,repo) {
+    const url = "https://api.github.com/repos/"+repo+"/git/trees/main?recursive=1"
+    const res = await fetch(url)
 
   if (!res.ok) {
     throw new Error("GitHub returned HTTP " + res.status);
